@@ -1,0 +1,5 @@
+{
+    "editor.wordWrapColumn": 60,
+    "editor.wordWrap": "wordWrapColumn",
+    "chat.editor.wordWrap": "on"
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    
+</head>
+<body style="padding:5em">
+    <!--Text color:text-colorname-shade-->
+    <p>1.Text Colors</p>
+    <p class="text-blue-400">Tailwind CSS</p>
+    <p class="text-blue-500">Tailwind CSS</p>
+    <p class="text-blue-700">Tailwind CSS</p>
+    <br>
+    <hr>
+    <!--Backgroud colors: bg-colorname-value-->
+    <p>2.Background Colors</p>
+    <p class="text-white bg-pink-500">Tailwind CSS</p>
+    <p class="text-white bg-red-400">Tailwind CSS</p>
+    <br>
+    <hr>
+    <p>3.Text Decoration</p>
+    <p class="line-through text-red-700">Tailwind</p>
+    <p class="underline text-green-500">Tailwind</p>
+    <p class="text-purple-600 underline decoration-blue-400">Tailwind</p>
+    <br>
+    <p class="overline decoration-blue-400">Tailwind</p>
+    <br>
+    <hr>
+    <!--Accent Colors-->
+    <p>4.Accent Colors</p>
+    <input type="checkbox"/><!--Browser default-->
+    <input type="checkbox" class="accent-yellow-500"/>
+    <input type="checkbox" class="accent-red-500"/>
+    <input type="checkbox" class="accent-teal-500"/>
+    <br>
+    <hr>
+    <!--Arbitary Colors-->
+    <p>5. Arbitary Colors</p>
+    <p class="text-[#50d71e]">Tailwind</p>
+    <br>
+    <hr>
+    <p>6.Margins</p>
+    <!--m-5px for all side, mx:left and right, my:for top and bottom-->
+    <!--mt:for top, ml: for left, mr: for right, mb: for bottom-->
+    <div class="m-4 bg-yellow-100">Margin for all around</div><!--All side margin-->
+    <div class="mx-4 bg-yellow-200">Margin from X axis</div>
+    <div class="my-4 bg-yellow-300">Margin from Y axis</div>
+    <div class="mt-4 bg-yellow-400">Margin top</div>
+    <div class="mr-4 bg-yellow-500">Margin Right</div>
+    <div class="ml-4 bg-yellow-600">Margin left</div>
+    <div class="mb-4 bg-yellow-700">Margin bottom</div>
+    <br>
+    <p>Arbitary spacing</p>
+    <div class="m-[25px] bg-slate-500">2.Margin all around</div>
+    <br>
+    <hr>
+    <!--padding-->
+    <p>7. Padding</p>
+    <br>
+    <div class="p-4 bg-indigo-100">Padding all around</div>
+    <div class="px-4 bg-indigo-200">Padding from X</div><!--both left and right-->
+    <div class="py-4 bg-indigo-300">Padding from Y</div><!--both top and bottom-->
+    <div class="pt-4 bg-indigo-400">Padding top</div>
+    <div class="pr-4 bg-indigo-500">Padding Right</div>
+    <div class="pl-4 bg-indigo-600">Padding left</div>
+    <div class="pb-4 bg-indigo-700">Padding bottom</div>
+    <div class="p-[9px] bg-indigo-800">Padding arbitary</div>
+    <br>
+    <hr>
+    <p>8. Space between X</p>
+    <div class="flex space-x-4">
+        <div class="p-4 bg-teal-200">1</div>
+        <div class="p-4 bg-teal-300">2</div>
+        <div class="p-4 bg-teal-500">3</div>
+    </div>
+    <br><hr>
+    <p>9. Space between Y</p>
+    <div class="flex flex-col space-y-4">
+        <div class="p-4 bg-teal-200">1</div>
+        <div class="p-4 bg-teal-300">2</div>
+        <div class="p-4 bg-teal-500">3</div>
+    </div>
+    <br>
+    <hr>
+    <!--Tailwind Sizing-->
+    <p>10. Tailwind Sizing</p>
+    <br>
+    <div class="bg-teal-100 p-5">
+        <div class="bg-red-500 m-1 p-1 w-1">1</div>
+        <div class="bg-red-500 m-1 p-1 w-1.5">1.5</div>
+        <div class="bg-red-500 m-1 p-1 w-2">2</div>
+        <div class="bg-red-500 m-1 p-1 w-3">3</div>
+        <div class="bg-red-500 m-1 p-1 w-4">4</div>
+        <div class="bg-red-500 m-1 p-1 w-5">5</div>
+        <div class="bg-red-500 m-1 p-1 w-6">6</div>
+        <div class="bg-red-500 m-1 p-1 w-7">7</div>
+        <div class="bg-red-500 m-1 p-1 w-8">8</div>
+        <div class="bg-red-500 m-1 p-1 w-9">9</div>
+        <div class="bg-red-500 m-1 p-1 w-10">10</div>
+        <div class="bg-red-500 m-1 p-1 w-14">14</div>
+        <div class="bg-red-500 m-1 p-1 w-16">16</div>
+        <div class="bg-red-500 m-1 p-1 w-20">20</div>
+        <div class="bg-red-500 m-1 p-1 w-24">24</div>
+        <div class="bg-red-500 m-1 p-1 w-28">28</div>
+        <div class="bg-red-500 m-1 p-1 w-32">32</div>
+        <div class="bg-red-500 m-1 p-1 w-36">36</div>
+        <div class="bg-red-500 m-1 p-1 w-64">64</div>
+        <div class="bg-red-500 m-1 p-1 w-80">80</div>
+        <div class="bg-red-500 m-1 p-1 w-96">96</div>
+    </div>
+    <br>
+    <hr>
+    <p class="mt5">11. Percentage Width</p>
+    <!--Percentage width-->
+    <div class="bg-indigo-400 mb-5 p-5">
+        <div class="bg-green-400 p-2 mb-4 w-1/2">1/2</div>
+        <div class="bg-green-400 p-2 mb-4 w-1/3">1/3</div>
+        <div class="bg-green-400 p-2 mb-4 w-1/4">1/4</div>
+        <div class="bg-green-400 p-2 mb-4 w-2/4">2/4</div>
+        <div class="bg-green-400 p-2 mb-4 w-3/4">3/4</div>
+        <div class="bg-green-400 p-2 mb-4 w-1/5">1/5</div>
+    </div>
+    <br>
+    <hr>
+    <!--Max width-->
+    <h1 class="mt-5">12. Max Width</h1>
+    <div class="bg-yellow-200 p-10 mb-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima. Totam corrupti molestiae repellendus asperiores porro, ipsum non cum odit perspiciatis aperiam quidem veritatis officiis natus magnam quibusdam adipisci esse quia amet nemo deleniti quasi sint tenetur. Maiores dolorum provident quas odio voluptates placeat eius labore similique nesciunt, nihil quam corporis harum illo id ipsam voluptatum? Atque alias tempore aspernatur cupiditate facilis iste, temporibus aliquid sint dignissimos reiciendis, doloremque eum ea. Expedita vitae amet illum voluptas.</div>
+</body>
+</html>

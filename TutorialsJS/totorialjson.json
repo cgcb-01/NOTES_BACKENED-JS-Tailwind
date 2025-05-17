@@ -1,0 +1,11 @@
+{
+    "Name":"Sutapa Naskar",
+    "Age": 20,
+    "Email":"sn@gmail.com",
+    "issubscribed":true,
+    "hobbies":["Reading","Running","Cooking"],
+    "Address":{
+        "City":"New York",
+        "Idk":true
+    }
+}

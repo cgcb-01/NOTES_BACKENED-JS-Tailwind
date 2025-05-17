@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fceca4;
+}
+.heading
+{
+  font-family: "Aldrich", serif;
+  font-weight: 400;
+  font-style: normal;
+ color:rgb(255, 213, 0);
+ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);  
+ font-size:20px;
+}
+.top-bottom
+{
+  top: 60%;
+  left: 50px;
+}
+.CreateNow
+{
+  top:79%;
+  left:65px;
+  background-color: #3e0e07;
+  color:aliceblue;
+  border-radius:4px;
+  border-color:#000000;
+  box-shadow: #00030c;
+  height:45px;
+  width:100px;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin :8px
+}
+</style>
+<body>
+  <!--Bad way1 to declare events-->
+  <button onclick="alert(`Ay`)">Click Me</button>
+  <button onclick="console.log(`Hello World`)">Click me 2</button>
+  <!--Bad Way 2 to declare a -->
+<h1> Welcome to Javascript</h1>
+<h3> Welcome to the DOM course</h3>
+
+<div class="top-bottom" id="main"><h3 class="heading"><span style="color:rgb(254, 19, 180);font-weight: bold;">GetElemntByClassName</span><br><span class="cc"><span id="typing-text">
+</span></span>
+<br> GetElementById</h>
+</div>
+<h3 class="cls-1 cls-2 cls-3" id="id_1"> QuerySelector</h3>
+<h3 class="cls-1" id="id_1"> QuerySelector</h3>
+
+<!--siblings in the document-->
+<section> hello
+<ul class="Listmine">
+    QuerySelectorAll()
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</section>
+
+<!-- innerhtml, innertext etc-->
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong>
+  <script>
+    console.log("Hello Sutapa Here--")
+  </script>
+   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+</p>
+
+<!--Events in javascript-->
+<!--Bad way-->
+<button onlcick="alert(`ay`)">Bad way1</button>
+<!--Bad way 2--> 
+<button class="secondBtn">Bad way2</button>
+<!--Great Way-->
+<button class="best">Best Way</button>
+<!--Event Object-->
+<p class="para">
+  Lorem ipsum dolor siit amet consectetur adipisicing elit fugit velit
+</p>
+<!-- Attribute-->
+<a href="https://facebook.com">Facebook</a>
+<input type="text" value="Hello"/>
+<!--form elements-->
+<form>
+  <input type="text" class="newinput"/>
+  <input type="submit"value="submit"/>
+</form>
+<!-- <script src="javascriptbasics.js"></script> -->
+<!-- <script src="javascriptadv.js"></script> --> 
+<script src="javascriptbasics.js"></script>
+    
+</body>
+</html>
