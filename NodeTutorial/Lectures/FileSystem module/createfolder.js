@@ -1,6 +1,6 @@
 import *  as fs from "fs/promises";
 
-//creating Directory / Folder
+//Creating Directory / Folder
 //No error found in this case as in D drive Desktop there is html folder there courses folder is being created successflly.
 try{
     await fs.mkdir("D:\\Desktop\\html\\courses");
