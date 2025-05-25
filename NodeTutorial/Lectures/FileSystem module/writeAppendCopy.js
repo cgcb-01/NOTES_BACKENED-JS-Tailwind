@@ -26,3 +26,15 @@ catch(error)
 {
     console.log(error);
 }
+
+//Get File Information
+try{
+    const info=await fs.stat("info.txt");
+    console.log(info);
+    console.log(info.isDirectory()); //not a directory but a file
+    console.log(info.isFile()); 
+}
+catch(error)
+{
+    console.log(error);
+}

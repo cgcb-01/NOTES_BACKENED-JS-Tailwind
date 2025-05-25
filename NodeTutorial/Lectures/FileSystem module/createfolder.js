@@ -27,3 +27,9 @@ try{
 catch(error){
 console.log(error)
 }
+
+//inserting the try and catch block inside the function
+fs.mkdir("D:\\Desktop\\html\\courses1",(error)=>{
+    if(error) throw error;
+    console.log("Directory Created...");
+});
