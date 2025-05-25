@@ -17,3 +17,12 @@ catch(error)
 {
     console.log(error);
 }
+
+//Copy Files
+try{
+    await fs.copyFile("README.md","info.txt");
+}
+catch(error)
+{
+    console.log(error);
+}
