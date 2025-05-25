@@ -8,3 +8,12 @@ catch(error)
 {
     console.log(error);
 }
+
+//Now to append new lines in a file instead of replacing the existing ones
+try{
+    await fs.appendFile("README.md","\nNode.js is the best");
+}
+catch(error)
+{
+    console.log(error);
+}
