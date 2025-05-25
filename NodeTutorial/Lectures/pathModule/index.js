@@ -7,3 +7,5 @@ console.log(path.extname("c:\\nodejs\\app.html"));
 console.log(path.join("c:","sutapa","notes","react-js"));
 console.log(path.join("c:","sutapa","notes","react-js",".."));
 console.log(path.parse("c:\\nodejs\\app.html"));
+console.log(path.parse("c:\\nodejs\\app.html").ext);
+console.log(path.parse("c:\\nodejs\\app.html").name);
