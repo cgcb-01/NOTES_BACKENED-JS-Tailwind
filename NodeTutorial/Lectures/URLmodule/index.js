@@ -30,3 +30,8 @@ console.log(myURL.password); // gives the password of the url
 console.log(myURL.protocol); //protocol is: https here
 console.log(myURL.search); // gives the query to search here ?query=string
 console.log(myURL.searchParams);
+
+//updating
+myurl.pathname='/a/b/c';
+console.log(myurl.pathname);
+console.log(myurl.href);
