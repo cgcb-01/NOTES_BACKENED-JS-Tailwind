@@ -4,7 +4,7 @@ import fs from "fs";
 const server=http.createServer((req,res)=>{
     if(req.url=="/"){
         res.writeHead(202,"OK",{"Content-Type":"html"});
-        fs.readFile("./public/home.html",(error,data)=>{
+        fs.readFile("./NodeTutorial/public/home.html",(error,data)=>{
             if(error) throw error;
             res.end(data);
         })
@@ -12,7 +12,7 @@ const server=http.createServer((req,res)=>{
 
      else if(req.url=="/about"){
         res.writeHead(202,"OK",{"Content-Type":"html"});
-        fs.readFile("./public/about.html",(error,data)=>{
+        fs.readFile("./NodeTutorial/public/about.html",(error,data)=>{
             if(error) throw error;
             res.end(data);
         })
