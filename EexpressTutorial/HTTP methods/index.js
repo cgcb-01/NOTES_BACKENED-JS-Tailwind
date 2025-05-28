@@ -1,6 +1,6 @@
 import express from "express";
 const app=express();
-
+/*
 //an ugly routing code
 //GET: is used to retrieve all the data
 app.get("/student",(req,res)=>{
@@ -18,5 +18,21 @@ app.put("/student",(req,res)=>{
 app.delete("/student",(req,res)=>{
     res.send("Delete Students");
 })
+*/
 
+//Refactoring the ugly code
+//using route()
+app.route("/student")
+.get((req,res)=>{
+    res.send("All Students");})
+.post((req,res)=>{
+    res.send("Add new Students");
+})
+.put((req,res)=>{
+    res.send("Update Students");
+})
+.delete((req,res)=>{
+    res.send("Delete Students");
+})
 
+app.listen(8000,()=>console.log("Server Up"));
