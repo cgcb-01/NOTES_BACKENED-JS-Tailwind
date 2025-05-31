@@ -5,7 +5,9 @@ Once we have created a router object we can add a middleware and HTTP method rou
 */ 
 
 import express from "express";
-import students from "./routes/routes.js"
+import teachers from "./routes/students.js";
+// we can have more than one routes and all mentioned in routes folder as files we just need to import it here na duse it by app.use.
+import students from "./routes/teacher.js"
 const app = express();
 
 //PROCESS
@@ -17,4 +19,5 @@ const app = express();
 // 6. Use the (app.use) built-in middleware & provide your routes.
 
 app.use('/students',students);
+app.use('/teachers',students);
 app.listen(8000,()=>console.log("Server Up"));
