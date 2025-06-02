@@ -7,13 +7,15 @@ const app= express();
     next();
 }*/
 //We can define it here or in a seperate folder like middle ware and import it here.
-import userCredentials from "./middleware/log";
+import userCredentials from "./middleware/log.js";
 /*
 - Request
 - Middleware
 - Response
 */
-app.get("/",userCredentials,(req,res)=>{
+//app.get("/",userCredentials,(req,res)=>{
+    app.use(userCredentials) //or we can alos use app.use()
+    app.get("/",(req,res)=>{
     res.send("<h1> Hello Admin</h1>");
 });
 
