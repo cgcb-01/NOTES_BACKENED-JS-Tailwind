@@ -1,0 +1,131 @@
+test> show dbs
+admin     40.00 KiB
+config    72.00 KiB
+local     80.00 KiB
+student  108.00 KiB
+test> show admin
+MongoshInvalidInputError: [COMMON-10001] 'admin' is not a valid argument for "show".
+test> db.getname()
+TypeError: db.getname is not a function
+test> db.getName()
+test
+test> const name="Sutapa"
+
+test> name
+Sutapa
+test> const data={"name":"Sutapa","age":"19"}
+
+test> data
+{ name: 'Sutapa', age: '19' }
+test> //to make collection in the current database
+
+test> //db.collectionName.insertOne() to create a collection if not exist
+
+test> db.movies.insertOne({"name":"Extraction 2", ratings:4})
+{
+  acknowledged: true,
+  insertedId: ObjectId('6841b15e5edb581bc3b5f899')
+}
+test> show collections
+movies
+test> // to know more we use .help()
+
+test> db.movies.insertMany.help()
+
+  db.collection.insertMany(documents, options):
+
+  Inserts multiple documents into a collection.
+
+  For more information on usage: https://docs.mongodb.com/manual/reference/method/db.collection.insertMany
+test> m1={"name":"SitaRaman", ratings:5}
+{ name: 'SitaRaman', ratings: 5 }
+test> m1={"name":"Transformers", ratings:3}
+{ name: 'Transformers', ratings: 3 }
+test> m1={"name":"SitaRaman", ratings:5}
+{ name: 'SitaRaman', ratings: 5 }
+test> m2={"name":"Transformers", ratings:3}
+{ name: 'Transformers', ratings: 3 }
+test> m1
+{ name: 'SitaRaman', ratings: 5 }
+test> m2
+{ name: 'Transformers', ratings: 3 }
+test> m3={"name":"Sanam Teri kasam", ratings:4.8}
+{ name: 'Sanam Teri kasam', ratings: 4.8 }
+test> db.insertMany([m1,m2,m3])
+TypeError: db.insertMany is not a function
+test> db.movies.insertMany([m1,m2,m3])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6841b3435edb581bc3b5f89a'),
+    '1': ObjectId('6841b3435edb581bc3b5f89b'),
+    '2': ObjectId('6841b3435edb581bc3b5f89c')
+  }
+}
+test> // to read all the data
+
+test> db.movies.find()
+[
+  {
+    _id: ObjectId('6841b15e5edb581bc3b5f899'),
+    name: 'Extraction 2',
+    ratings: 4
+  },
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89a'),
+    name: 'SitaRaman',
+    ratings: 5
+  },
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89b'),
+    name: 'Transformers',
+    ratings: 3
+  },
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89c'),
+    name: 'Sanam Teri kasam',
+    ratings: 4.8
+  }
+]
+test> db.movies.find({"name":"Sanam Teri Kasam"})
+
+test> db.movies.find({"name":"Sanam Teri kasam"})
+[
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89c'),
+    name: 'Sanam Teri kasam',
+    ratings: 4.8
+  }
+]
+test> db.movies.find({"name":"Sanam Teri Kasam"},{name:1})
+
+test> db.movies.find({"name":"Sanam Teri Kasam"},{"name":1})
+
+test> db.movies.find({"name":"Sanam Teri kasam"},{"name":1})
+[
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89c'),
+    name: 'Sanam Teri kasam'
+  }
+]
+test> //here only one field shown
+
+test> db.movies.find({"name":"Sanam Teri kasam"},{"name":0})
+[ { _id: ObjectId('6841b3435edb581bc3b5f89c'), ratings: 4.8 } ]
+test> //no fields are shown
+
+test> db.movies.find({"name":"Sanam Teri kasam"},{"name":2})
+[
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89c'),
+    name: 'Sanam Teri kasam'
+  }
+]
+test> db.movies.find({"name":"Sanam Teri kasam"},{"name":3})
+[
+  {
+    _id: ObjectId('6841b3435edb581bc3b5f89c'),
+    name: 'Sanam Teri kasam'
+  }
+]
+test> //here name:"0" for false will ot show it and ay other value means true
