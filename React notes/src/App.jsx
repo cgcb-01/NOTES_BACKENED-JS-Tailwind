@@ -10,6 +10,10 @@ import Welcome from "./JSX_exercise/JSX_Ex-2/Welcome";
 import Greeting from "./JSX expression/EX-1/Greeting";
 //JSX expression ex-2
 import ProductInfo from "./JSX expression/Ex-2/ProductInfo";
+//List in JSX
+import ListTheory from "./LIST in JSX/ListTheory";
+import ProductList from "./LIST in JSX/Exercise/ProductList.jsx";
+import UserList from "./LIST in JSX/Exercise/UserList.jsx";
 
 import React from "react";
 const App = () => {
@@ -26,8 +30,15 @@ const App = () => {
     <JSXRules />*/
     /*4.---JSX expression ex-1
     <Greeting />*/
-    /*5.---JSX expression ex-2*/
-    <ProductInfo />
+    /*5.---JSX expression ex-2
+    <ProductInfo />*/
+    /*6.---List in JSX
+    <ListTheory />
+    7.---List in JSX exercise
+    <div>
+      <ProductList />
+      <UserList />
+    </div>*/
   );
 };
 export default App;
