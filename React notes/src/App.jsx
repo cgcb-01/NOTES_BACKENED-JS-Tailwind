@@ -4,11 +4,10 @@ import Maincontent from "./1st react app/maincontent";
 import Footer from "./1st react app/footer";
 
 //JSX ex-1
-
+import JSXRules from "./JSX_exercise/Ex-1/JSXRules";
 
 //jsx ex-2
 import Welcome from "./JSX_exercise/JSX_Ex-2/Welcome";
-
 
 import React from "react";
 const App = () => {
@@ -22,9 +21,9 @@ const App = () => {
 
     //JSX ex-2
     // <Welcome />
-    
+
     //JSX ex-1
-    
+    <JSXRules />
   );
 };
 export default App;
