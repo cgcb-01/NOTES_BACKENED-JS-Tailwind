@@ -16,6 +16,7 @@ import ProductList from "./LIST in JSX/Exercise/ProductList.jsx";
 import UserList from "./LIST in JSX/Exercise/UserList.jsx";
 //Props in JSX
 import PropsTheory from "./PROPS/propsexample.jsx";
+import Profile from "./PROPS/Exercise/Profile.jsx";
 
 import React from "react";
 const App = () => {
@@ -41,7 +42,9 @@ const App = () => {
       <ProductList />
       <UserList />
     </div>*/
-    <PropsTheory />
+    /*8.---Props in JSX exercise
+    <PropsTheory />*/
+    <Profile />
   );
 };
 export default App;

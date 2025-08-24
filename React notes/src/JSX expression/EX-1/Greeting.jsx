@@ -1,5 +1,5 @@
 import React from "react";
-const name = "Sutapa Naskar";
+const name = "cgcb-01";
 function currentDate() {
   const date = new Date();
   return date.toDateString();
