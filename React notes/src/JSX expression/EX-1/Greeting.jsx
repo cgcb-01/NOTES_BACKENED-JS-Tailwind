@@ -9,7 +9,7 @@ function Greeting() {
   return (
     <div>
       <h1> Hello, I am {name}</h1>
-      <p>Todays date is: {currentDate()}</p>
+      <p>Todays date is : {currentDate()}</p>
     </div>
   );
 }
