@@ -14,6 +14,8 @@ import ProductInfo from "./JSX expression/Ex-2/ProductInfo";
 import ListTheory from "./LIST in JSX/ListTheory";
 import ProductList from "./LIST in JSX/Exercise/ProductList.jsx";
 import UserList from "./LIST in JSX/Exercise/UserList.jsx";
+//Props in JSX
+import PropsTheory from "./PROPS/propsexample.jsx";
 
 import React from "react";
 const App = () => {
@@ -39,6 +41,7 @@ const App = () => {
       <ProductList />
       <UserList />
     </div>*/
+    <PropsTheory />
   );
 };
 export default App;
