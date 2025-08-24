@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <hr></hr>
-      <p>Thanks for Visiting my site</p>
+      <p>Thanks for Visiting my site </p>
     </footer>
   );
 };
