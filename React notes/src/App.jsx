@@ -17,6 +17,12 @@ import UserList from "./LIST in JSX/Exercise/UserList.jsx";
 //Props in JSX
 import PropsTheory from "./PROPS/propsexample.jsx";
 import Profile from "./PROPS/Exercise/Profile.jsx";
+//Conditional Rendering
+import ValidPassword from "./Conditional Rendering/cond_render_example1.jsx";
+import Cart from "./Conditional Rendering/Cond_render_example2.jsx";
+import Weather from "./Conditional Rendering/Exercise/Weather.jsx";
+import Greetings from "./Conditional Rendering/Exercise/Greeting.jsx";
+import UserStatus from "./Conditional Rendering/Exercise/UserStatus.jsx";
 
 import React from "react";
 const App = () => {
@@ -43,8 +49,17 @@ const App = () => {
       <UserList />
     </div>*/
     /*8.---Props in JSX exercise
-    <PropsTheory />*/
-    <Profile />
+    <PropsTheory />
+    <Profile />*/
+
+    /*9.---Conditional Rendering*/
+    //<ValidPassword />
+    //<Cart />
+    <div>
+      <Greetings timeOfDay={"afternoon"} />
+      <Weather />
+      <UserStatus />
+    </div>
   );
 };
 export default App;
