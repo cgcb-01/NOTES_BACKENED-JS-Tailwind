@@ -20,9 +20,12 @@ import Profile from "./PROPS/Exercise/Profile.jsx";
 //Conditional Rendering
 import ValidPassword from "./Conditional Rendering/cond_render_example1.jsx";
 import Cart from "./Conditional Rendering/Cond_render_example2.jsx";
+//conditional rendering exercise
 import Weather from "./Conditional Rendering/Exercise/Weather.jsx";
 import Greetings from "./Conditional Rendering/Exercise/Greeting.jsx";
 import UserStatus from "./Conditional Rendering/Exercise/UserStatus.jsx";
+//Styling in jsx
+import StyleCard from "./Styling render in react/Exercise/StyleCard.jsx";
 
 import React from "react";
 const App = () => {
@@ -52,14 +55,15 @@ const App = () => {
     <PropsTheory />
     <Profile />*/
 
-    /*9.---Conditional Rendering*/
-    //<ValidPassword />
-    //<Cart />
+    /*9.---Conditional Rendering
     <div>
+      <ValidPassword />
+      <Cart />
       <Greetings timeOfDay={"afternoon"} />
       <Weather />
       <UserStatus />
-    </div>
+    </div>*/
+    <StyleCard />
   );
 };
 export default App;
