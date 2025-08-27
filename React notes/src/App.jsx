@@ -26,6 +26,8 @@ import Greetings from "./Conditional Rendering/Exercise/Greeting.jsx";
 import UserStatus from "./Conditional Rendering/Exercise/UserStatus.jsx";
 //Styling in jsx
 import StyleCard from "./Styling render in react/Exercise/StyleCard.jsx";
+//Events to Components
+import Events from "./Add Events to Components/Example1.jsx";
 
 import React from "react";
 const App = () => {
@@ -63,7 +65,11 @@ const App = () => {
       <Weather />
       <UserStatus />
     </div>*/
-    <StyleCard />
+    /*10. -------- Styling
+    <StyleCard />*/
+    /*11. --------Events to Componnets
+     */
+    <Events />
   );
 };
 export default App;
