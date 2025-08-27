@@ -28,6 +28,9 @@ import UserStatus from "./Conditional Rendering/Exercise/UserStatus.jsx";
 import StyleCard from "./Styling render in react/Exercise/StyleCard.jsx";
 //Events to Components
 import Events from "./Add Events to Components/Example1.jsx";
+//States
+import Counter from "./State And Hooks/Example_counter.jsx";
+import Friends from "./State And Hooks/Example2.jsx";
 
 import React from "react";
 const App = () => {
@@ -68,8 +71,11 @@ const App = () => {
     /*10. -------- Styling
     <StyleCard />*/
     /*11. --------Events to Componnets
+    <Events />*/
+    /*12. --------States
      */
-    <Events />
+    //<Counter />
+    <Friends />
   );
 };
 export default App;
