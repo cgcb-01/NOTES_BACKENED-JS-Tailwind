@@ -31,7 +31,8 @@ import Events from "./Add Events to Components/Example1.jsx";
 //States
 import Counter from "./State And Hooks/Example_counter.jsx";
 import Friends from "./State And Hooks/Example2.jsx";
-
+//States Excercise
+import StatesExcercise from "./State And Hooks/Exercise/ExcerciseStates.jsx";
 import React from "react";
 const App = () => {
   return (
@@ -75,7 +76,8 @@ const App = () => {
     /*12. --------States
      */
     //<Counter />
-    <Friends />
+    //<Friends />
+    <StatesExcercise />
   );
 };
 export default App;
