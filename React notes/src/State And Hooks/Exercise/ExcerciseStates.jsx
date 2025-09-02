@@ -1,46 +1,125 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+//Ques No :1 Movie Rating System
 const Rating = () => {
   const [rate, setRate] = useState(3);
-  const [newRate, setNewRate] = useState(""); //Another state to pass the value of the input to the button
+  const [newRate, setNewRate] = useState("");
+
   const changeRating = () => {
     setRate(Number(newRate));
     setNewRate("");
   };
+
   return (
     <>
       <h1>Equaliser 3</h1>
-      <h3>Rating:{rate}</h3>
+      <h3>Rating: {rate}</h3>
       <input
         type="number"
         placeholder="Enter New rating"
-        value={newRate} //The newrate value is shown after submit it goes again blank
-        onChange={(e) => setNewRate(e.target.value)}
+        value={newRate}
+        onChange={(e) => setNewRate(e.target.value)} // To pass the value to button cange the value of newRate
       />
-      <button type="submit" onClick={changeRating}>
+      <button
+        type="submit"
+        onClick={
+          changeRating
+          //On click will assign newRate value to rate
+        }
+      >
         Change Rating
       </button>
     </>
   );
 };
 
-//Random Number Generator
+// QUES:2 Random No generator
 const RandomNumber = () => {
-  const [number, setno] = useState(Math.random());
+  const [number, setNo] = useState(Math.floor(Math.random() * 100));
   return (
     <>
-      <h1>The Random No is: {number} </h1>
-      <button onClick={() => setno(Math.floor(Math.random() * 100))}>
+      <h1>The Random No is: {number}</h1>
+      <button onClick={() => setNo(Math.floor(Math.random() * 100))}>
         Generate New Number
       </button>
     </>
   );
 };
 
+// QUES:3 Changing name with useEffect()
+const Name = () => {
+  const [name, setName] = useState(() => {
+    const savedName = localStorage.getItem("name");
+    return savedName ? JSON.parse(savedName) : "";
+  });
+  const [newname, setnewname] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("name", JSON.stringify(name));
+  }, [name]); //This runs after render if anyting on the dependency array changes here [name] and the function on change updates the local storate with key "name" and a value.
+
+  const changeName = () => {
+    setName(newname);
+    setnewname("");
+  };
+
+  return (
+    <div>
+      <h1>Hello Everyone, I am : {name}</h1>
+      <input
+        value={newname}
+        onChange={(e) => setnewname(e.target.value)}
+        placeholder="Enter your name"
+      />
+      <button onClick={changeName}>Change Name</button>
+    </div>
+  );
+};
+
+//Ques: 4
+const Todo = () => {
+  const [tasks, setlist] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+  const [task, setTask] = useState("");
+  const handleSubmit = () => {
+    if (task.trim()) {
+      setlist([...tasks, task.trim()]);
+      setTask("");
+    }
+  };
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+  return (
+    <div>
+      <h1>Todo List</h1>
+      {tasks.map((todo) => (
+        <ul key={Math.random()}>
+          <li>{todo}</li>
+        </ul>
+      ))}
+      <input
+        type="text"
+        value={task}
+        placeholder="Enter A new Task"
+        onChange={(e) => setTask(e.target.value)}
+      />
+      <button onClick={handleSubmit}>Add Task</button>
+    </div>
+  );
+};
+
+// Ques 5
+
 function ExcerciseStates() {
   return (
     <>
       <Rating />
       <RandomNumber />
+      <Name />
+      <Todo />
     </>
   );
 }
