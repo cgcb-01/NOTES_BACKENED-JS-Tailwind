@@ -33,6 +33,8 @@ import Counter from "./State And Hooks/Example_counter.jsx";
 import Friends from "./State And Hooks/Example2.jsx";
 //States Excercise
 import StatesExcercise from "./State And Hooks/Exercise/ExcerciseStates.jsx";
+//Portals
+import Copied from "./Portal in Jsx/Copy.jsx";
 import React from "react";
 const App = () => {
   return (
@@ -74,10 +76,12 @@ const App = () => {
     /*11. --------Events to Componnets
     <Events />*/
     /*12. --------States
-     */
+     
     //<Counter />
     //<Friends />
-    <StatesExcercise />
+    <StatesExcercise />*/
+    /* Portals in JSX*/
+    <Copied />
   );
 };
 export default App;
