@@ -111,8 +111,7 @@ const Todo = () => {
   );
 };
 
-// Ques 5
-
+// Ques 5: Updating the Profile Information
 const Profile = () => {
   const [profile, setprofile] = useState({
     name: "",
