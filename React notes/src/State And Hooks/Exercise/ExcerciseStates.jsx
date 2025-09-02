@@ -113,6 +113,65 @@ const Todo = () => {
 
 // Ques 5
 
+const Profile = () => {
+  const [profile, setprofile] = useState({
+    name: "",
+    age: "",
+    number: "",
+  });
+  const [copyprofile, setcpyprofile] = useState({
+    name: "",
+    age: "",
+    number: "",
+  });
+
+  const handleSubmit = () => {
+    let newProfile = { ...profile }; // Breaking it into objects by spread operator
+    let cpynew = { ...copyprofile };
+    if (copyprofile.name.trim()) newProfile.name = copyprofile.name;
+    if (copyprofile.age.trim()) newProfile.age = copyprofile.age;
+    if (copyprofile.number.trim()) newProfile.number = copyprofile.number;
+    cpynew.name = cpynew.age = cpynew.number = "";
+    setcpyprofile(cpynew);
+
+    setprofile(newProfile);
+  };
+
+  return (
+    <div>
+      <h1>Profile Information Update</h1>
+      <h3>Name: {profile.name}</h3>
+      <h3>Age: {profile.age}</h3>
+      <h3>Phone Number: {profile.number}</h3>
+      <h2>Update Information:</h2>
+
+      <input
+        type="text"
+        value={copyprofile.name}
+        onChange={(e) =>
+          setcpyprofile({ ...copyprofile, name: e.target.value })
+        }
+        placeholder="Enter the new Name"
+      />
+      <input
+        type="number"
+        value={copyprofile.age}
+        onChange={(e) => setcpyprofile({ ...copyprofile, age: e.target.value })}
+        placeholder="Enter the new Age"
+      />
+      <input
+        type="number"
+        value={copyprofile.number}
+        onChange={(e) =>
+          setcpyprofile({ ...copyprofile, number: e.target.value })
+        }
+        placeholder="Enter the new Phone Number"
+      />
+      <button onClick={handleSubmit}>Submit</button>
+    </div>
+  );
+};
+
 function ExcerciseStates() {
   return (
     <>
@@ -120,6 +179,7 @@ function ExcerciseStates() {
       <RandomNumber />
       <Name />
       <Todo />
+      <Profile />
     </>
   );
 }
