@@ -35,6 +35,9 @@ import Friends from "./State And Hooks/Example2.jsx";
 import StatesExcercise from "./State And Hooks/Exercise/ExcerciseStates.jsx";
 //Portals
 import Copied from "./Portal in Jsx/Copy.jsx";
+
+//contextHook
+import ContextHook from "./Context Hook/ContextHookExample.jsx";
 import React from "react";
 const App = () => {
   return (
@@ -80,8 +83,11 @@ const App = () => {
     //<Counter />
     //<Friends />
     <StatesExcercise />*/
-    /* Portals in JSX*/
-    <Copied />
+    /* Portals in JSX
+    <Copied />*/
+
+    /* Prop Drilling, ContextAPI, CONTEXTHOOK*/
+    <ContextHook />
   );
 };
 export default App;
