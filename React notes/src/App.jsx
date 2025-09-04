@@ -38,6 +38,8 @@ import Copied from "./Portal in Jsx/Copy.jsx";
 
 //contextHook
 import ContextHook from "./Context Hook/ContextHookExample.jsx";
+import ContextExc from
+
 import React from "react";
 const App = () => {
   return (
@@ -86,8 +88,8 @@ const App = () => {
     /* Portals in JSX
     <Copied />*/
 
-    /* Prop Drilling, ContextAPI, CONTEXTHOOK*/
-    <ContextHook />
+    /* Prop Drilling, ContextAPI, CONTEXTHOOK
+    <ContextHook />*/
   );
 };
 export default App;
