@@ -38,7 +38,10 @@ import Copied from "./Portal in Jsx/Copy.jsx";
 
 //contextHook
 import ContextHook from "./Context Hook/ContextHookExample.jsx";
+//useReducer
 import Counterreducer from "./useReducerHook/Exercise/Counter.jsx";
+//useId
+import UniqueId from "./useId/Example.jsx";
 
 import React from "react";
 const App = () => {
@@ -90,7 +93,13 @@ const App = () => {
 
     /* Prop Drilling, ContextAPI, CONTEXTHOOK
     <ContextHook />*/
-    <Counterreducer />
+
+    //useReducer
+    //<Counterreducer />
+
+    /*useId
+     */
+    <UniqueId />
   );
 };
 export default App;
